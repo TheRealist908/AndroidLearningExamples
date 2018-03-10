@@ -1,0 +1,16 @@
+Readable File Streams
+As a good example of working with a readable stream, we turn to the fs.createRead-
+Stream() method. This method opens a file as a readable stream. Compare this behavior
+to readFile(), which reads the entire contents of a file and stores it in
+memory. If your application needs to process many potentially large files simultaneously
+(for example, a web server), memory usage and garbage collection can become
+a problem when using readFile().
+createReadStream() returns a readable stream based on the filename passed in as
+an argument. Listing 5-10 uses createReadStream() to display the contents of a
+file named foo.txt. Notice that the data event handler converts the data chunk to
+a string and then displays it using process.stdout.write(). The console.log()
+method was not used here because it appends an additional new line to the string
+that it displays.3 If console.log() was used to display an input file that required
+multiple chunks, it would be displayed with extra line breaks sprinkled throughout.
+process.stdout represents the standard output stream of the current process. This
+is a writable stream that will be covered shortly:

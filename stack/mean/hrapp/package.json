@@ -1,0 +1,34 @@
+{
+  "name": "hrapp",
+  "version": "1.0.0",
+  "description": "A sample application using the MEAN architecture",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "populate": "node ./bin/populate_db",
+    "start": "node server.js"
+  },
+  "author": "Dean F. Marsh (student)",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bson": "^1.0.4",
+    "colors": "^1.1.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-generator": "^4.15.5",
+    "mongoose": "^4.13.7",
+    "mongoose-post-find": "0.0.2",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "require_optional": "^1.0.1",
+    "serve-favicon": "^2.4.5"
+  },
+  "bin": {
+    "hrapp": "populate_db.js"
+  },
+  "devDependencies": {}
+}

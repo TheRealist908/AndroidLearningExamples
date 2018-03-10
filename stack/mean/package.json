@@ -1,0 +1,10 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.16.2",
+    "expressjs": "^1.0.1",
+    "send": "^0.16.1"
+  }
+}
