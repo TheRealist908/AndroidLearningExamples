@@ -14,5 +14,6 @@ public class EmptyActivity extends AppCompatActivity {
         String title = this.getIntent().getExtras().getString("NAME");
         TextView tv = findViewById(R.id.tvActivityParameter);
         tv.setText(title);
+        //Comment test to see if branching is working.
     }
 }
