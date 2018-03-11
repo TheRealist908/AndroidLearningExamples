@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.androidlearningexamples.basic.BasicActivity"
+    tools:showIn="@layout/activity_basic">
+
+
+    <TextView
+        android:id="@+id/bf_tv_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bf_et_ContactName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/bf_et_ContactName"
+        android:layout_marginTop="11dp"
+        android:text="@string/contact_information"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bf_et_ContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bf_et_Address"
+        android:layout_alignStart="@+id/bf_et_Address"
+        android:layout_below="@+id/bf_tv_headline"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="@string/contact_name"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/bf_et_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bf_tv_headline"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/bf_et_EmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bf_et_Address"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/bf_et_Address"
+        android:layout_below="@+id/bf_et_Address"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/bf_et_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bf_et_EmailAddress"
+        android:layout_alignStart="@+id/bf_et_EmailAddress"
+        android:layout_below="@+id/bf_et_EmailAddress"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/bf_et_DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bf_et_Phone"
+        android:layout_alignStart="@+id/bf_et_Phone"
+        android:layout_below="@+id/bf_et_Phone"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/date_of_birth"
+        android:inputType="date"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" />
+
+    <Button
+        android:id="@+id/bf_btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bf_et_DOB"
+        android:layout_alignStart="@+id/bf_et_DOB"
+        android:layout_below="@+id/bf_et_DOB"
+        android:layout_marginTop="17dp"
+        android:text="@string/save" />
+
+</RelativeLayout>

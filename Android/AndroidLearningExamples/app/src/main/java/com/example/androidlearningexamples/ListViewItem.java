@@ -14,7 +14,7 @@ import java.io.InputStream;
  * Code modified from its original source: com.raywenderlich.alltherecipes
  */
 
-public class ListViewItem {
+class ListViewItem {
 
     public String itemTitle;
     public String itemSubtitle;

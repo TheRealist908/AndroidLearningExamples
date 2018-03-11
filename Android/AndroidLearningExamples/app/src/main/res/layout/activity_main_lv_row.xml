@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="6dp">
@@ -9,32 +8,44 @@
         android:id="@+id/ivIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:contentDescription="@string/icon"
-        android:src="@drawable/ic_wunderlist_black_36dp" />
+        android:src="@drawable/ic_wunderlist_black_24dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/tvTitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/title"/>
+            android:text="@string/title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tvSubTitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/subtitle"/>
+            android:text="@string/subtitle"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/tvDetailsText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:singleLine="true"
             android:ellipsize="marquee"
-            android:text="@string/details_go_here"/>
+            android:singleLine="false"
+            android:text="@string/details_go_here"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+
     </LinearLayout>
 </LinearLayout>

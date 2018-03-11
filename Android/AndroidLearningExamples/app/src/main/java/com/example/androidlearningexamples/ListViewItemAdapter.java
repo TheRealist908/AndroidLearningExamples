@@ -12,16 +12,14 @@ import java.util.ArrayList;
  * Creates a ListView Adapter for the Data in ListViewItem that will display in the Activity
  */
 
-public class ListViewItemAdapter extends BaseAdapter {
+class ListViewItemAdapter extends BaseAdapter {
 
-    private Context mContext;
-    private LayoutInflater mInflater;
-    private ArrayList<ListViewItem> mDataSource;
+    private final LayoutInflater mInflater;
+    private final ArrayList<ListViewItem> mDataSource;
 
-    public ListViewItemAdapter(Context context, ArrayList<ListViewItem> items) {
-        mContext = context;
+    ListViewItemAdapter(Context context, ArrayList<ListViewItem> items) {
         mDataSource = items;
-        mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -41,8 +39,8 @@ public class ListViewItemAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Get view for row item
-        View rowView = mInflater.inflate(R.layout.row, parent, false);
+        // Get view for activity_main_lv_row item
+        View rowView = mInflater.inflate(R.layout.activity_main_lv_row, parent, false);
         TextView titleTextView = rowView.findViewById(R.id.tvTitleText);
         TextView subtitleTextView = rowView.findViewById(R.id.tvSubTitleText);
         TextView detailsTextView = rowView.findViewById(R.id.tvDetailsText);

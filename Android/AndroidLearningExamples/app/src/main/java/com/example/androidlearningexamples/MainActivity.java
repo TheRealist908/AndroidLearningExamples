@@ -9,11 +9,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.androidlearningexamples.basic.BasicActivity;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         // Set the variable to the ListView widget created in the content_main.xml layout file
-        mListView = findViewById(R.id.lvParentListView);
+        ListView mListView = findViewById(R.id.lvParentListView);
 
         // Create the array of ListViewItem objects
         final ArrayList<ListViewItem> listViewItemsArrayList = ListViewItem.getListViewItemsFromFile(getString(R.string.JsonListViewItems), this);
@@ -37,16 +37,24 @@ public class MainActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent();
                 // Figure out which item was selected from our ArrayList
                 ListViewItem selectedListViewItem = listViewItemsArrayList.get(position);
-                // Create a new Activity page based on the Activity that the click should go to
-                // Todo: Build in functionality to use a switch/case to determine the activity to go to as the below is defaulted for now
-                Intent detailIntent = new Intent(context, EmptyActivity.class);
 
-                // Pass in the name of the item selected just to show we got the read thing
-                detailIntent.putExtra("NAME",listViewItemsArrayList.get(position).itemTitle);
+                // Determine which Activity to start based on the title
+                // Todo: I would like to figure out how to dynamically map the class based on the title. Could just add it to JSON file mapping
+                switch (selectedListViewItem.itemTitle) {
+                    case "Basic Activity" :
+                        intent.setClass(context, BasicActivity.class);
+                        break;
+                    default :
+                        intent.setClass(context, EmptyActivity.class);
+                }
+
+                // Set some parameters that can be read by the receiving activity.
                 // Then tell Android to start that activity.
-                startActivity(detailIntent);
+                intent.putExtra("NAME",listViewItemsArrayList.get(position).itemTitle);
+                startActivity(intent);
             }
         });
     }
