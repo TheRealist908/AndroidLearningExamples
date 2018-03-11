@@ -1,7 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android Learning Examples</string>
     <string name="title_activity_main">Android Learning Examples</string>
-    <string name="android_view_examples">Android View Examples</string>
+    <string name="android_view_examples" tools:ignore="UnusedResources">Android View Examples</string>
     <string name="JsonListViewItems">listviewitems.json</string>
     <string name="main_no_items">No items to display</string>
     <string name="icon">icon</string>
@@ -9,4 +9,14 @@
     <string name="subtitle">SubTitle</string>
     <string name="details_go_here">Details go here</string>
     <string name="Placeholder">Placeholder Text. You got here!</string>
+    <string name="title_activity_basic">Basic Activity</string>
+    <string name="address">Address</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone">Phone</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="save">Save</string>
+    <string name="title_activity_basic_details">Basic Activity Details</string>
+    <string name="bad_tv_confirmation">Confirmation</string>
 </resources>

@@ -1,14 +1,14 @@
 {
   "listviewitems": [
     {
-      "itemTitle" : "TextView, EditView, and Button",
-      "itemSubtitle" : "Basic functionality",
-      "itemDesc" : "This is very basic application functionality for an activity. It is not very interesting, but it is necessary!"
+      "itemTitle" : "Basic Activity",
+      "itemSubtitle" : "TextView, EditView, and Button",
+      "itemDesc" : "Activity displays form with TextView, EditView and Button. Includes the button onClickListener event that creates a new Activity. Passes parameters from one activity to another. "
     },
     {
       "itemTitle" : "Test name 2",
-      "itemSubtitle" : "Basic functionality",
-      "itemDesc" : "Description 2"
+      "itemSubtitle" : "Tabbed Layout",
+      "itemDesc" : "[Coming next!]"
     },
     {
       "itemTitle" : "Test name 3",

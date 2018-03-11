@@ -21,7 +21,25 @@
         </activity>
         <activity
             android:name=".EmptyActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".basic.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidlearningexamples.MainActivity" />
+        </activity>
+        <activity
+            android:name=".basic.BasicActivityDetails"
+            android:label="@string/title_activity_basic_details"
+            android:parentActivityName=".basic.BasicActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidlearningexamples.basic.BasicActivity" />
+        </activity>
     </application>
 
 </manifest>
