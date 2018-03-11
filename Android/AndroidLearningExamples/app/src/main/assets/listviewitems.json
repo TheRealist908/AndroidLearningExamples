@@ -1,0 +1,64 @@
+{
+  "listviewitems": [
+    {
+      "itemTitle" : "TextView, EditView, and Button",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "This is very basic application functionality for an activity. It is not very interesting, but it is necessary!"
+    },
+    {
+      "itemTitle" : "Test name 2",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 2"
+    },
+    {
+      "itemTitle" : "Test name 3",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 3"
+    },
+    {
+      "itemTitle" : "Test name 4",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 4"
+    },
+    {
+      "itemTitle" : "Test name 5",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 5"
+    },
+    {
+      "itemTitle" : "Test name 6",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 6"
+    },
+    {
+      "itemTitle" : "Test name 7",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 7"
+    },
+    {
+      "itemTitle" : "Test name 8",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 8"
+    },
+    {
+      "itemTitle" : "Test name 9",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 9"
+    },
+    {
+      "itemTitle" : "Test name 10",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 10"
+    },
+    {
+      "itemTitle" : "Test name 11",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 11"
+    },
+    {
+      "itemTitle" : "Test name 12",
+      "itemSubtitle" : "Basic functionality",
+      "itemDesc" : "Description 12"
+    }
+  ]
+}

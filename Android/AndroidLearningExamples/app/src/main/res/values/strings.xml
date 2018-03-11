@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">AndroidLearningExamples</string>
+    <string name="app_name">Android Learning Examples</string>
+    <string name="title_activity_main">Android Learning Examples</string>
+    <string name="android_view_examples">Android View Examples</string>
+    <string name="JsonListViewItems">listviewitems.json</string>
+    <string name="main_no_items">No items to display</string>
+    <string name="icon">icon</string>
+    <string name="title">Title</string>
+    <string name="subtitle">SubTitle</string>
+    <string name="details_go_here">Details go here</string>
+    <string name="Placeholder">Placeholder Text. You got here!</string>
 </resources>
